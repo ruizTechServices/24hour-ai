@@ -111,11 +111,10 @@ model Message { id String @id @default(uuid()); sessionId String; role String; c
 - **Scope:** Lock features to this PRD
 
 ## 10. Build Checklist
-- [ ] Clone the repository and install dependencies
-- [ ] Add and initialize the PocketFlow submodule
-- [ ] Configure environment variables (`.env`) and Node version (`.nvmrc`)
-- [ ] Commit Windsurf rules to version control
-- [ ] Launch local Supabase emulator and Pinecone local
+- [x] Clone the repository and install dependencies
+- [x] Add and initialize the PocketFlow submodule
+- [x] Configure environment variables (`.env`) and Node version (`.nvmrc`)
+- [x] Commit Windsurf rules to version control
 - [ ] Scaffold `chatFlow.ts` using Windsurf Agent
 - [ ] Implement the `/api/chat` endpoint and ChatUI component
 - [ ] Write Jest unit tests for `chatFlow` and ChatUI
