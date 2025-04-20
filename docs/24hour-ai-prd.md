@@ -72,7 +72,7 @@
 - **Auth:** Clerk + Supabase RLS
 - **Billing:** Square SDK 2025 (or Stripe)
 - **CI/CD:** GitHub Actions, Codespaces  
-- **Deploy:** Vercel (Edge + Cron), Render/Fly.io for webhooks
+- **Deploy:** Vercel (Edge + Cron)
 - **Monitor:** Sentry, LogRocket
 
 ## 6. Data Model (Prisma)
@@ -111,10 +111,7 @@ model Message { id String @id @default(uuid()); sessionId String; role String; c
 - **Scope:** Lock features to this PRD
 
 ## 10. Build Checklist
-- [x] Clone the repository and install dependencies
-- [x] Add and initialize the PocketFlow submodule
 - [x] Configure environment variables (`.env`) and Node version (`.nvmrc`)
-- [x] Commit Windsurf rules to version control
 - [ ] Scaffold `chatFlow.ts` using Windsurf Agent
 - [ ] Implement the `/api/chat` endpoint and ChatUI component
 - [ ] Write Jest unit tests for `chatFlow` and ChatUI
@@ -124,11 +121,6 @@ model Message { id String @id @default(uuid()); sessionId String; role String; c
 - [ ] Scaffold and implement `paymentFlow` and webhook handlers
 - [ ] Build the Admin dashboard with manual cleanup controls
 - [ ] Scaffold and schedule the `cleanupFlow` cron job
-- [ ] Configure GitHub Actions and Codespaces for CI/CD
-- [ ] Create end‑to‑end tests with Cypress or Playwright
-- [ ] Conduct performance and load testing
-- [ ] Deploy the frontend to Vercel and backend/webhooks to the chosen host
-- [ ] Configure Sentry and LogRocket monitoring
 - [ ] Monitor production, gather feedback, and plan v4 enhancements
 
 ---
