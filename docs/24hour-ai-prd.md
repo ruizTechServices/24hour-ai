@@ -66,7 +66,7 @@
 - **Frontend:** Next.js 15 (App Dir), Tailwind CSS 4, Shadcn UI, TanStack Query v5
 - **Backend:** Next.js API Routes; Express 5/Fastify for webhooks
 - **Orchestration:** PocketFlow.js (`libs/pocketflow`)
-- **DB:** Supabase (Postgres + pgvector) + Prisma >=v6.5
+- **DB:** Supabase (Postgres + pgvector)
 - **Vector DB:** Pinecone (or pgvector for small scale)
 - **Storage:** Supabase Storage
 - **Auth:** Clerk + Supabase RLS
@@ -112,8 +112,8 @@ model Message { id String @id @default(uuid()); sessionId String; role String; c
 
 ## 10. Build Checklist
 - [x] Configure environment variables (`.env`) and Node version (`.nvmrc`)
-- [ ] Scaffold `chatFlow.ts` using Windsurf Agent
-- [ ] Implement the `/api/chat` endpoint and ChatUI component
+- [x] Scaffold `/chat` using Windsurf Agent
+- [x] Implement the `/api/chat` endpoint and ChatUI component
 - [ ] Write Jest unit tests for `chatFlow` and ChatUI
 - [ ] Scaffold and implement `canvasFlow` along with UI and API endpoints
 - [ ] Scaffold and implement `uploadFlow` along with UI and API endpoints
