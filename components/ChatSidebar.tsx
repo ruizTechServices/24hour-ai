@@ -3,9 +3,11 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { X } from 'lucide-react';
 import ChatHistoryItem from './ChatHistoryItem';
 import { ChatHistoryItemData } from '../libs/types';
+import ClerkHeader from './ClerkHeader';
 
 interface ChatSidebarProps {
   isOpen: boolean;
@@ -69,6 +71,9 @@ export default function ChatSidebar({
           ))
         )}
       </div>
+      <Link href="/" className="text-blue-500">Home</Link>
+      <br/>
+      <ClerkHeader />
     </motion.div>
   );
 }

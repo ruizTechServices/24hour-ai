@@ -9,6 +9,7 @@ export const PROVIDER_MODELS = {
   anthropic: [
     { value: 'claude-3-7-sonnet-20250219', label: 'Claude 3.7 Sonnet' },
     { value: 'claude-3-5-sonnet-latest', label: 'Claude 3.5 Sonnet Latest' },
+    { value: 'claude-3-haiku-20240307', label: 'Claude 3.5 Haiku' },
   ],
   // Add more providers/models here as needed
 } as const;
